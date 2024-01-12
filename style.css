@@ -1,0 +1,140 @@
+:root {
+  --color1: #00ea95;
+  --color2: #1859dd;
+  --background-color: black;
+  --main-text-color: white;
+  --box-shadow: #6482c4;
+  width: 100vw;
+  height: 100vh;
+}
+
+html,
+body {
+  width: 100%;
+  height: 90%;
+  margin: 0;
+  padding: 0;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+  position: fixed;
+}
+
+.header {
+  margin: 0;
+  padding: 10px 0;
+}
+
+header h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px 0;
+  font-size: 32px;
+}
+
+header h1 span:first-child {
+  color: var(--color1);
+}
+
+header h1 span:last-child {
+  color: var(--color2);
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  display: flex;
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--color1);
+  margin: 0;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+form {
+  min-width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 8px 16px;
+  border: 1px solid var(--main-text-color);
+  box-shadow: -8px 8px 4px var(--box-shadow), 0 0 2px var(--main-text-color),
+    0 0 4px var(--main-text-color), 0 0 8px var(--main-text-color),
+    0 0 16px var(--main-text-color), 0 0 8px white inset;
+  background-color: var(--color2);
+  border-radius: 4px;
+  transition: 1s;
+  max-width: 1100px;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+form.signup {
+  min-height: 50%;
+  border: 1;
+  justify-content: space-evenly;
+}
+
+form.login {
+  min-height: 30%;
+  border: 1;
+  justify-content: space-evenly;
+}
+
+form label {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  font-size: 20px;
+  border: 1px solid var(--main-text-color);
+  border-radius: 4px;
+  transition: 0.5s;
+  padding: 4px;
+  background-color: var(--background-color);
+  color: var(--main-text-color);
+  font-family: "Courier New";
+}
+
+form button {
+  padding: 4px 0;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--color1);
+  color: var(--main-text-color);
+  font-family: "Courier New";
+  font-size: 20px;
+  font-weight: 400;
+  transition: 1s;
+}
+
+footer {
+  margin: 0;
+  padding: 10px 0;
+}
+
+footer a {
+  color: var(--main-text-color);
+  text-decoration: wavy;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}

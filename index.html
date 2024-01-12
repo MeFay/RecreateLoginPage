@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial- scale=1 auto" />
+    <meta charset="UTF-8" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="Title">
+        <h1>
+          <span>Mindera</span>
+          <span>School</span>
+        </h1>
+      </div>
+    </header>
+    <main>
+      <form class="signup">
+        <div class="form-header">
+          <h2>Criar conta</h2>
+          <h3>Apenas demora alguns segundos</h3>
+        </div>
+
+        <label for="Nome">
+          <span>Nome</span>
+          <input type="text" placeholder="Nome" value="Lara Croft" id="nome" />
+        </label>
+
+        <label for="signup-username">
+          <span>Nome de Utilizador</span>
+          <input
+            type="text"
+            placeholder="Nome de Utilizador"
+            value="Rambo42"
+            id="signup-username"
+            required=""
+          />
+        </label>
+
+        <label for="signup-email">
+          <span>Email</span>
+          <input
+            type="email"
+            placeholder="Email"
+            value="rocky@jones.com"
+            id="signup-email"
+            required=""
+          />
+        </label>
+
+        <label for="signup-password">
+          <span>Palavra-Passe</span>
+          <input
+            type="password"
+            placeholder="Palavra-Passe"
+            id="signup-password"
+            required=""
+          />
+        </label>
+
+        <button type="submit">Criar</button>
+        
+      </form>
+
+      <form class="login">
+        <div class="form-header">
+          <h2>Iniciar Sessão</h2>
+        </div>
+
+        <label for="login-username">
+          <span>Nome de Utilizador</span>
+          <input
+            type="text"
+            placeholder="Nome de Utilizador"
+            id="login-username"
+            required=""
+          />
+        </label>
+
+        <label for="login-password">
+          <span>Palavra-Passe</span>
+          <input
+            type="password"
+            placeholder="Palavra-Passe"
+            id="login-password"
+            required=""
+          />
+        </label>
+
+        <button type="submit">Entrar</button>
+
+      </form>
+    </main>
+    <footer>
+	    <p><a href="https://school.mindera.com/">We craft software with people we love.</a></p>
+	  </footer>
+  </body>
+</html>
